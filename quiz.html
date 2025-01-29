@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test GES</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="home-box custom-box ">
+        <h3>TEST SINOVI:</h3>
+        <p>Savollarning umumiy soni: <span class="total-question"></span></p>
+        <button type="button" class="btn" onclick="startQuiz()">Testni boshlash</button>
+    </div>
+    <div class="quiz-box custom-box hide">
+        <div class="question-number">
+
+        </div>
+        <div class="question-text">
+
+        </div>
+        <div class="option-container">
+
+        </div>
+        <div class="next-question-btn">
+            <button type="button" class="btn" onclick="next()">Davom qilish</button>
+        </div>
+        <div class="answers-indicator">
+
+        </div>
+
+    </div>
+    <div class="result-box custom-box hide">
+        <h1>Test natijalari</h1>
+        <table>
+            <tr>
+                <td>Savollar</td>
+                <td><span class="total-question"></span></td>
+            </tr>
+            <tr>
+                <td>Urinishlar</td>
+                <td><span class="total-attempt"></span></td>
+            </tr>
+            <tr>
+                <td>To'g'ri</td>
+                <td><span class="total-correct"></span></td>
+            </tr>
+            <tr>
+                <td>Noto'g'ri</td>
+                <td><span class="total-wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Ko'rsatgich</td>
+                <td><span class="total-percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Reyting</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn" onclick="tryAgainQuiz()">Qayta urinish</button>
+        <button type="button" class="btn" onclick="goToHome()">Bosh Sahifaga Qaytish</button>
+    </div>
+    <script src="js/question.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
